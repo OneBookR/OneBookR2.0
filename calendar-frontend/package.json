@@ -1,10 +1,13 @@
 {
+  "homepage": "https://OneBookR.github.io/calendar-frontend",
   "name": "calendar-frontend",
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -23,3 +26,4 @@
     "vite": "^6.3.3"
   }
 }
+
